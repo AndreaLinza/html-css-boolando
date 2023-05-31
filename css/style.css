@@ -11,17 +11,19 @@ body {
 
 nav {
     background-color: #F66620;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
+    margin-bottom: 20px;
     top: 0;
+    z-index: 2;
     padding: 1rem;
-    -webkit-box-shadow: 0px 2px 10px 0px #000000;
-    -moz-box-shadow: 0px 2px 10px 0px #000000;
-    -o-box-shadow: 0px 2px 10px 0px #000000;
-    box-shadow: 0px 2px 10px 0px #000000;
+    -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    -moz-box-shadow: 0px 0px 5px 0px #000000;
+    -o-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 5px 0px #000000;
 }
 
-.container {
+.nav-container {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -51,6 +53,7 @@ nav {
 }
 
 .logo {
+    object-fit: contain;
     width: 10%;
 }
 
@@ -69,4 +72,44 @@ i {
     border: 0;
     color: white;
 
+}
+
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.model{
+    flex-basis: 33.3%;
+    padding: .5rem 1rem;
+
+}
+.product-card{
+    display: flex;
+    position: relative;
+}
+.model img{
+    object-fit: cover;
+    display: flex;
+    height: 500px;
+}
+
+
+.favorite{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 35px;
+    margin: 10px 20px;
+    padding: .5rem 1rem;
+    background-color: white;
+}
+.favorite:hover{
+    color: red;
 }
