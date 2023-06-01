@@ -112,6 +112,9 @@ i {
 .col a {
     display: inline-block;
 }
+.container-card{
+    position: relative;
+}
 
 .product-card {
     position: relative;
