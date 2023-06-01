@@ -38,12 +38,10 @@ nav {
 .nav-link,
 .account-login,
 .media-social {
-    width: 30%;
+    width: auto;
 }
 
-.account-login {
-    text-align: right;
-}
+
 
 .nav-link ul,
 .info-footer ul {
@@ -64,17 +62,19 @@ nav {
     text-decoration: underline;
 }
 
-.logo {
-    display: inline-block;
-    text-align: center;
-    width: 20%;
-    width: 150px;
-}
 
-.logo img {
+.img-logo, .product-img,
+.product-img-hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.logo{
+    width: 15%;
+    margin: auto;
+    transform: translateX(-30%);
 }
 
 button {
@@ -84,16 +84,13 @@ button {
 
 button:hover {
     cursor: pointer;
-
 }
 
 i {
-
     padding: .5rem;
     background-color: none;
     border: 0;
     color: white;
-
 }
 /*-----------------------------------Main part-----------------------------------------*/
 .row {
@@ -121,25 +118,16 @@ i {
     margin-bottom: .5rem;
 }
 
-.first-img,
-.second-img {
-    object-fit: cover;
-    display: flex;
-    width: 100%;
-    height: 100%;
-
-}
-
-.first-img {
+.product-img {
     position: absolute;
     display: none;
 }
 
-.second-img {
+.product-img-hover {
     position: relative;
 }
 
-.product-card:hover .first-img {
+.product-card:hover .product-img {
     display: block;
     z-index: 1;
 
@@ -216,17 +204,13 @@ footer {
 }
 
 .info-footer {
-    width: 50%;
+    width: auto;
     padding: 1rem;
 
 }
 
 .info-footer ul li {
     padding-right: .3rem;
-}
-
-.media-social {
-    text-align: right;
 }
 
 .info-footer a {
@@ -238,5 +222,8 @@ footer {
 
 .media-social h4 {
     margin-bottom: 1rem;
-    margin-right: 5rem;
+    /*margin-right: 5rem;*/
+}
+.media-social i{
+    padding-left: 0;
 }
